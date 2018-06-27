@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aboutus"
+    android:background="@drawable/backgrounddark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/images"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/synergyHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="IETE-ISF"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/eventsborder"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <com.ramotion.foldingcell.FoldingCell
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/aboutVit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false">
+                            ​
+
+                            <FrameLayout
+                                android:id="@+id/aboutVitContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/background_light"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:background="@color/bootstrap_brand_secondary_fill"
+                                    android:fontFamily="sans-serif"
+                                    android:padding="5dp"
+                                    android:text="VIT University or VIT, formerly called Vellore Engineering College, is an Indian institute of higher education and a deemed university under Section 3 of the UGC Act. Founded in 1984, as Vellore Engineering College, by G. Viswanathan, the institution offers 20 undergraduate, 34 postgraduate, four integrated and four research programs. It has campuses in Vellore and Chennai, Tamil Nadu, India."
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                            <FrameLayout
+                                android:id="@+id/aboutVitTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@android:color/holo_orange_light"
+                                    android:gravity="center"
+                                    android:text="ABOUT VIT"
+                                    android:textColor="@color/bootstrap_brand_secondary_fill"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                        </com.ramotion.foldingcell.FoldingCell>
+
+                        <com.ramotion.foldingcell.FoldingCell
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/whoAreWe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false">
+                            ​
+
+                            <FrameLayout
+                                android:id="@+id/whoAreWeContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/background_light"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:background="@color/bootstrap_brand_secondary_fill"
+                                    android:fontFamily="sans-serif"
+                                    android:padding="5dp"
+                                    android:text="The Institution of Electronics and Telecommunication Engineers (IETE) is India's leading recognized professional society devoted to the advancement of Science and Technology of Electronics, Telecommunication and IT."
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                            <FrameLayout
+                                android:id="@+id/whoAreWeTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@android:color/holo_orange_light"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center"
+                                    android:text="WHO ARE WE?"
+                                    android:textColor="@color/bootstrap_brand_secondary_fill"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                        </com.ramotion.foldingcell.FoldingCell>
+                        <com.ramotion.foldingcell.FoldingCell
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/whatDoWeDo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false">
+                            ​
+
+                            <FrameLayout
+                                android:id="@+id/whatDoWeDoContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/background_light"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:fontFamily="sans-serif"
+                                    android:padding="5dp"
+                                    android:text="The Institution provides leadership in Scientific and Technical areas of direct importance to the national development and economy."
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                            <FrameLayout
+                                android:id="@+id/whatDoWeDoTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@android:color/holo_orange_light"
+                                    android:gravity="center"
+                                    android:text="WHAT DO WE DO?"
+                                    android:textColor="@color/bootstrap_brand_secondary_fill"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                        </com.ramotion.foldingcell.FoldingCell>
+
+                        <com.ramotion.foldingcell.FoldingCell
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/moreAboutUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:clipChildren="false"
+                            android:clipToPadding="false">
+                            ​
+
+                            <FrameLayout
+                                android:id="@+id/moreAboutUsContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/background_light"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:fontFamily="sans-serif"
+                                    android:padding="5dp"
+                                    android:text="Government of India has recognized IETE as a Scientific and Industrial Research Organization (SIRO) and also notified as an educational Institution of national eminence. The objectives of IETE focus on advancing electro-technology. The IETE conducts and sponsors technical meetings, conferences, symposia, and exhibitions all over India, publishes technical journals and provides continuing education as well as career advancement opportunities to its members."
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                            <FrameLayout
+                                android:id="@+id/moreAboutUsTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@android:color/holo_orange_light"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center"
+                                    android:text="MORE ABOUT US"
+                                    android:textColor="@color/bootstrap_brand_secondary_fill"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+                            ​
+                        </com.ramotion.foldingcell.FoldingCell>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:width="60dp"
+                    android:height="40dp"
+                    android:background="@drawable/roundedbutton"
+                    android:gravity="center"
+                    android:text="BACK TO HOME"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

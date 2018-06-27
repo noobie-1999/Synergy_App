@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Combos"
+    android:background="@drawable/backgrounddark">
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/backgrounddark"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/backgrounddark"></android.support.v4.view.ViewPager>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/slidedots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/images"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/backgrounddark">
+        <com.ugurtekbas.fadingindicatorlibrary.FadingIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            app:radius="5dp"
+            app:fillColor="#56B6BF"
+            app:strokeColor="#FC823B"
+            app:shape="Rectangle"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="562dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/slidedots"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/eventsborder"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="COMBOS"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/culturalborder">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="The Combos for Synergy'19 are here! get the most out of this opportunity and enhance your skills and a minimum cost.
+
+                                                         Choose the combo which suits your interests and gear up for a happening and enthralling learning experience along with the unlimited fun with awaits you!"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                android:orientation="vertical"
+                android:id="@+id/combosimages">
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewpagercombos">
+
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below ="@id/combosimages"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/culturalborder"
+                android:text="Scroll right for Prev"
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1"/>
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:gravity="center|center_horizontal|center_vertical"
+            android:background="@drawable/culturalborder"
+            android:text="Scroll left for Next"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/background_light"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="BACK TO HOME"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_light"
+                    android:background="@drawable/roundedbutton"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="REGISTER NOW"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_light"
+                    android:background="@drawable/roundedbutton"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
